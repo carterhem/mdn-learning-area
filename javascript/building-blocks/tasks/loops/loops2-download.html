@@ -41,6 +41,21 @@
     ]
 
     // Add your code here
+    for(const person in phonebook) {
+    //loop within the object
+
+      // console.log("targetname",name)
+      // console.log("phonebook indexNumber",person)
+      // console.log("phonebook[person].name",phonebook[person].name)
+
+    if(name === phonebook[person].name) {
+      //if targetname matches the name value of the person in phonebook we are looking at
+      para.innerHTML = `${phonebook[person].name} can be reached at ${phonebook[person].number}`;
+      //add name and phone number to para
+      break;
+      //make sure to end the loop, we found the target name so we don't need to keep going
+      }
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
