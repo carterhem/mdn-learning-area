@@ -30,7 +30,16 @@
     const list = document.createElement('ul');
 
     // Add your code here
+    for(const item of myArray) {
+      //loop through items in myArray
+      const li = document.createElement('li');
+      //every time we loop, create a list item element
+      li.innerHTML = item;
+      //take the list item element and add item from array to it
+      list.appendChild(li);
+      //li has been created and populated, now we just have to add it to the ul list element
 
+    }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
